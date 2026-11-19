@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Surprise</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== Birthday Section ===== */
+
+.birthday-section {
+    background-color: #e7799e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cake {
+    font-size: 280px;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.happy-birthday {
+    color: #c2185b;
+    font-size: 4em;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.continue-btn {
+    margin-top: 30px;
+    padding: 12px 24px;
+    border: none;
+    background: white;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+/* ===== Janvi Page ===== */
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+}
+
+#hero {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+    color: white;
+    text-align: center;
+}
+
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 90%;
+    width: 700px;
+    text-align: center;
+}
+
+.content-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-height: 500px;
+}
+
+#story { background-color: #fde2e4; }
+#reasons { background-color: #d8e2dc; }
+#future { background-color: #cddafd; }
+
+.reasons-list {
+    list-style-type: '💖';
+    padding-left: 30px;
+    text-align: left;
+    display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎂 FIRST PAGE -->
+<section class="birthday-section">
+    <div class="cake">🎂</div>
+    <div class="happy-birthday">Happy Birthday Sirji!</div>
+    <button class="continue-btn" onclick="goNext()">Continue ❤️</button>
+</section>
+
+<!-- 💖 SECOND PAGE -->
+
+
+<section id="story" class="section">
+    <div class="content-box">
+        <h2>Photo gallery</h2>
+        <img src="D:\nidhi\WhatsApp Image 2026-02-23 at 9.18.44 PM (2).jpeg">
+        <img src="D:\nidhi\WhatsApp Image 2026-02-23 at 9.18.44 PM (1).jpeg">
+        <img src="D:\nidhi\WhatsApp Image 2026-02-23 at 9.18.46 PM (1).jpeg">
+        <img src="D:\nidhi\WhatsApp Image 2026-02-23 at 9.18.43 PM (1).jpeg">
+    </div>
+</section>
+
+
+
+<section id="future" class="section">
+    <div class="content-box">
+        <h2>Happy Birtday Sirji 🎂</h2>
+        <p>HAPPY BIRTHDAY TO ONE OF THE SPECIAL PERSON IN MY LIFE!
+           ON YOUR SPECIAL DAY, I JUST WANT YOU TO KNOW HOW MUCH YOU MEAN TO ME.
+           YOU BRING LIGHT, LAUGHTER, AND SO MUCH LOVE WHEREVER YOU GO.
+           MAY YOUR DAY BE FILLED WITH ALL THE HAPPINESS YOU DESERVE,
+           AND MAY THIS YEAR BRING YOU ENDLESS SUCCESS, PEACE, AND JOY.
+           ALWAYS STAY THE AMAZING PERSON YOU ARE - THE WORLD IS BETTER WITH YOU IN IT.</p>
+    </div>
+</section>
+
+<script>
+function goNext() {
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+</body>
+</html> 
