@@ -73,7 +73,7 @@ export default function Header() {
             {/* input feild */}
             <input
               type="text"
-              className="bg-white/13 rounded-4xl h-full pl-12 text-[16px] tracking-[-0.01em]  w-118.5 placeholder:text-white/65 font-light leading-none"
+              className="bg-white/13 rounded-4xl h-full pl-12 text-[16px] tracking-[-0.02em]  w-118.5 placeholder:text-white/65 font-extralight leading-none"
               placeholder="What do you want to play?"
             />
           </div>
