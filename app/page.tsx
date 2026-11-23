@@ -4,7 +4,7 @@ import Header from "./components/Header";
 
 export default function page() {
   return (
-    <div className="flex flex-col h-screen justify-between text-white overflow-clip">
+    <div className="flex flex-col h-screen w-screen justify-between text-white overflow-clip">
       <Header />
       <Body />
       <Footer />

@@ -143,7 +143,7 @@ export default function LeftSidebar() {
   ];
   return (
     <aside
-      className={`bg-white/5 rounded-[10px] transition-all pt-1 ${
+      className={`bg-white/3 rounded-[10px] duration-300 transition-all pt-1 ${
         isOpen ? "w-73 ml-2" : "w-18 flex justify-center items-center "
       }`}
     >
@@ -197,7 +197,7 @@ export default function LeftSidebar() {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col gap-4 items-center px-3 h-full justify-between text-white/60 pt-4 ">
+        <div className="flex flex-col group gap-4 items-center px-3 h-full justify-between text-white/60 pt-4 ">
           <div className="flex justify-between w-full px-2 gap-4 ">
             <button
               onClick={() => setIsOpen(false)}
